@@ -12,8 +12,8 @@ namespace Commandos
         public string CodeName { get; }
 
         public Object Tool { get; }
-        public int CountLife { get; private set; } = 100;
-        public string status { get; private set; } = "walk";
+        public int CountLife { get; protected set; } = 100;
+        public string Status { get; protected set; } = "walk";
 
         public Commando(string Name, string CodeName, object tool)
         {
@@ -25,19 +25,19 @@ namespace Commandos
         public void walk()
         {
             Console.WriteLine("The soldier is walking.");
-            this.status = "walk";
+            this.Status = "walk";
         }
 
         public void Hide()
         {
             Console.WriteLine("The soldier is hiding.");
-            this.status = "hide";
+            this.Status = "hide";
         }
 
-        public void Attack()
+        public virtual void Attack()
         {
-            Console.WriteLine($"The soldier {this.CodeName} attacking.");
-            this.status = "attack";
+            Console.WriteLine($"The commando soldier {this.CodeName} is attacking.");
+            this.Status = "attack";
         }
 
 
