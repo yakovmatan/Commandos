@@ -8,5 +8,6 @@ namespace Commandos
 {
     internal interface IWeapon
     {
+        void Shoot();
     }
 }

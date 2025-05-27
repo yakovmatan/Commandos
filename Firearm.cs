@@ -10,6 +10,13 @@ namespace Commandos
     {
         public string Name { get; }
         public string Maker { get; }
-        public string Ammocount { get; protected set; }
+        public int Ammocount { get; protected set; }
+
+        public Firearm(string name, string maker, int ammocount )
+        {
+            Name = name;
+            Maker = maker;
+            Ammocount = ammocount;
+        }
     }
 }
