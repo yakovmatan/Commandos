@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Commandos
 {
-    internal class NavalCommando : Commando
+    internal class AirCommando : Commando
     {
-        public NavalCommando(string Name, string CodeName, object tool ) : base(Name, CodeName, tool)
+        public AirCommando(string Name, string CodeName, object tool) : base(Name, CodeName, tool)
         {
         }
 
@@ -19,7 +19,7 @@ namespace Commandos
 
         public override void Attack()
         {
-            Console.WriteLine($"The naval commando {this.CodeName} is attacking.");
+            Console.WriteLine($"The Air commando {this.CodeName} is attacking.");
             this.Status = "attack";
         }
     }
