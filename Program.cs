@@ -10,9 +10,6 @@ namespace Commandos
     {
         static void Main(string[] args)
         {
-            Commando c = new Commando();
-            Console.WriteLine(c.Name);
-            //c.Name = "dfgks";
         }
     }
 }
